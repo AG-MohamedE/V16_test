@@ -28,7 +28,7 @@
                     <t t-foreach="data" t-as="stage">
                         <t t-set="s" t-value="stage.split('=')"/>
                         <div class="mb4" t-if="s[1] > '0'">
-                            <a name="%(auguria_kanban_helpdesk.ag_helpdesk_ticket_action_stage)d"
+                            <a name="%(auguria_kanban_stage_helpdesk.ag_helpdesk_ticket_action_stage)d"
                                type="action"
                                context="{
                            'search_default_team_id': active_id,
