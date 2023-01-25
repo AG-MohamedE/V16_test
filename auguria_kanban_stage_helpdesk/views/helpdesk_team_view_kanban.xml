@@ -23,7 +23,7 @@
                     <field name="stage_ids"/>
                     <field name="count_tickets_by_stages"/>
                 </xpath>
-                <xpath expr="//div[@class='col-6 o_kanban_primary_right']" position="inside">
+                <xpath expr="//div[@class='col o_kanban_primary_right']" position="inside">
                     <t t-set="data" t-value="record.count_tickets_by_stages.value.split('#')"/>
                     <t t-foreach="data" t-as="stage">
                         <t t-set="s" t-value="stage.split('=')"/>
